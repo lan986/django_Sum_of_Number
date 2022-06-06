@@ -1,0 +1,22 @@
+
+{% extends 'base.html' %}
+{% block content %}
+
+<h2> hello {{name}} from templete </h2>
+
+<form action="add"  method="post">
+
+    {% csrf_token %}
+<input type="text" name="num1" placeholder="first number">
+<br>
+<br>
+
+<input type="text" name="num2" placeholder=" second number" >
+
+<br>
+<br>
+<input type="submit">
+
+</form>
+
+{%endblock%}
